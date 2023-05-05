@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Darumadrop One', cursive;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(4,9,30,0.7), rgba(4,9,30,0.7)
+    ),url(cc1.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #B660CD;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 80%;
+    color: #B660CD;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.yes{
+    background: transparent;
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    bottom: 20%;
+    left: 0px;
+    width: 40%;
+    text-align: center;
+}
+.yes:hover{
+    border: 1px solid #B660CD;
+    background: #B660CD;
+    transition: 1s;
+}
+.yest{
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+}
+.no{
+    background: transparent;
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    bottom: 20%;
+    right: 0px;
+    width: 40%;
+    text-align: center;
+}
+.not{
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+}
+.yest:hover{
+    border: 1px solid #B660CD;
+    background: #B660CD;
+    transition: 1s;
+}
+
+.yest:hover{
+    border: 1px solid #B660CD;
+    background: #B660CD;
+    transition: 1s;
+}
+.not:hover{
+    border: 1px solid #B660CD;
+    background: #B660CD;
+    transition: 1s;
+}
+.no:hover{
+    border: 1px solid #B660CD;
+    background: #B660CD;
+    transition: 1s;
+}
+
+@media(max-width: 1170px) {
+    .header{
+        min-height: 100vh;
+    }
+    .yes{
+       bottom: 15%;
+       left: 10px;
+       width: 40%; 
+    } 
+    .no{
+       bottom: 15%;
+       right: 10px;
+       width: 40%;
+    }
+}
+
+
